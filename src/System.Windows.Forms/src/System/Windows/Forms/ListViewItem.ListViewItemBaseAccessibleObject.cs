@@ -19,7 +19,7 @@ namespace System.Windows.Forms
         ///  This class contains the base implementation of properties and methods for ListViewItem accessibility objects.
         /// </summary>
         /// <remarks>
-        ///  The implementation of this class fully corresponds to the behavior of the ListViewItem accessiblity object
+        ///  The implementation of this class fully corresponds to the behavior of the ListViewItem accessibility object
         ///  when the ListView is in "LargeIcon" or "SmallIcon" view.
         /// </remarks>
         internal class ListViewItemBaseAccessibleObject : AccessibleObject
@@ -140,7 +140,7 @@ namespace System.Windows.Forms
             {
                 if (_owningListView.View == View.Details || _owningListView.View == View.Tile)
                 {
-                    throw new InvalidOperationException(string.Format(SR.ListViewItemAccessbilityObjectInvalidViewsException,
+                    throw new InvalidOperationException(string.Format(SR.ListViewItemAccessibilityObjectInvalidViewsException,
                         nameof(View.LargeIcon),
                         nameof(View.List),
                         nameof(View.SmallIcon)));
@@ -155,7 +155,7 @@ namespace System.Windows.Forms
             {
                 if (_owningListView.View == View.Details || _owningListView.View == View.Tile)
                 {
-                    throw new InvalidOperationException(string.Format(SR.ListViewItemAccessbilityObjectInvalidViewsException,
+                    throw new InvalidOperationException(string.Format(SR.ListViewItemAccessibilityObjectInvalidViewsException,
                         nameof(View.LargeIcon),
                         nameof(View.List),
                         nameof(View.SmallIcon)));
