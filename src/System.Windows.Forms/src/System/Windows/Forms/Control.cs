@@ -3640,7 +3640,7 @@ namespace System.Windows.Forms
                 // We do this by checking "MenuAccessKeysUnderlined" - we show if this returns true.
 
                 // If MenuAccessKeysUnderlined returns false, we have to manually call CHANGEUISTATE on the topmost control
-                // Why? Well the way the API seems to work is that it stores in a bit flag for the the hidden
+                // Why? Well the way the API seems to work is that it stores in a bit flag for the hidden
                 // state.
 
                 // Details from the Menu keydown to changed value of _uiCuesState.
@@ -5708,7 +5708,7 @@ namespace System.Windows.Forms
         /// <summary>
         ///  This new Internal method checks the updateCount to signify that the control is within the "BeginUpdate" and "EndUpdate" cycle.
         ///  Check out : for usage of this. The Treeview tries to ForceUpdate the scrollbars by calling "WM_SETREDRAW"
-        ///  even if the control in "Begin - End" update cycle. Using thie Function we can guard against repetitively redrawing the control.
+        ///  even if the control in "Begin - End" update cycle. Using the Function we can guard against repetitively redrawing the control.
         /// </summary>
         internal bool IsUpdating()
         {
@@ -7453,7 +7453,7 @@ namespace System.Windows.Forms
 
             SetState(States.ParentRecreating, false);
 
-            // if our parent was initially the the parent who's handle just got recreated, we need
+            // if our parent was initially the parent who's handle just got recreated, we need
             // to recreate ourselves so that we get notification.  See UpdateReflectParent for more details.
             if (ReflectParent == ParentInternal)
             {
@@ -9248,7 +9248,7 @@ namespace System.Windows.Forms
             else
             {
                 // If a system control has no children in the Controls collection we
-                // restore the the PRF_CHILDREN flag because it may internally
+                // restore the PRF_CHILDREN flag because it may internally
                 // have nested children we do not know about.  ComboBox is a
                 // good example.
                 if (Controls.Count == 0)
