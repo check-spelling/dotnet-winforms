@@ -2692,7 +2692,7 @@ namespace System.Windows.Forms
         }
 
         /// <summary>
-        ///  This is the code that actually fires the measuereItem event.  Don't
+        ///  This is the code that actually fires the measureItem event.  Don't
         ///  forget to call base.onMeasureItem() to ensure that measureItem
         ///  events are correctly fired at all other times.
         /// </summary>
