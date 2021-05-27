@@ -2282,7 +2282,7 @@ namespace System.Windows.Forms.Design
                                     // If we have failed to add a control in this Paste operation ...
                                     if (associatedCompsOfFailedControl != null)
                                     {
-                                        // then dont add its children controls.
+                                        // then don't add its children controls.
                                         foreach (Component comp in associatedCompsOfFailedControl)
                                         {
                                             if (comp == obj as Component)
@@ -2295,7 +2295,7 @@ namespace System.Windows.Forms.Design
 
                                     if (foundAssociatedControl)
                                     {
-                                        continue; //continue from here so that we dont add the associated component of a control that failed paste operation.
+                                        continue; //continue from here so that we don't add the associated component of a control that failed paste operation.
                                     }
 
                                     ComponentDesigner cDesigner = host.GetDesigner(curComp) as ComponentDesigner;

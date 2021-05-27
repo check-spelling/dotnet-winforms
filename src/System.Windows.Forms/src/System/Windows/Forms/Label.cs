@@ -1385,7 +1385,7 @@ namespace System.Windows.Forms
             if (SelfSizing)
             {
                 // In the case of SelfSizing
-                // we dont know what size to be until we're parented
+                // we don't know what size to be until we're parented
                 AdjustSize();
             }
 
