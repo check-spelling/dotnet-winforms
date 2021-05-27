@@ -2456,7 +2456,7 @@ namespace System.Windows.Forms.PropertyGridInternal
         /// <summary>
         ///  Called when the label portion of this GridEntry is clicked.
         ///  Default implementation fired the event to any listeners, so be sure
-        ///  to call base.OnLabelClick(e) if this is overrideen.
+        ///  to call base.OnLabelClick(e) if this is overridden.
         /// </summary>
         protected virtual void OnLabelClick(EventArgs e)
         {
@@ -2466,7 +2466,7 @@ namespace System.Windows.Forms.PropertyGridInternal
         /// <summary>
         ///  Called when the label portion of this GridEntry is double-clicked.
         ///  Default implementation fired the event to any listeners, so be sure
-        ///  to call base.OnLabelDoubleClick(e) if this is overrideen.
+        ///  to call base.OnLabelDoubleClick(e) if this is overridden.
         /// </summary>
         protected virtual void OnLabelDoubleClick(EventArgs e)
         {
@@ -2546,7 +2546,7 @@ namespace System.Windows.Forms.PropertyGridInternal
         /// <summary>
         ///  Called when the outline icon portion of this GridEntry is clicked.
         ///  Default implementation fired the event to any listeners, so be sure
-        ///  to call base.OnOutlineClick(e) if this is overrideen.
+        ///  to call base.OnOutlineClick(e) if this is overridden.
         /// </summary>
         protected virtual void OnOutlineClick(EventArgs e)
         {
@@ -2556,7 +2556,7 @@ namespace System.Windows.Forms.PropertyGridInternal
         /// <summary>
         ///  Called when the outline icon portion of this GridEntry is double-clicked.
         ///  Default implementation fired the event to any listeners, so be sure
-        ///  to call base.OnOutlineDoubleClick(e) if this is overrideen.
+        ///  to call base.OnOutlineDoubleClick(e) if this is overridden.
         /// </summary>
         protected virtual void OnOutlineDoubleClick(EventArgs e)
         {
@@ -2566,7 +2566,7 @@ namespace System.Windows.Forms.PropertyGridInternal
         /// <summary>
         ///  Called when RecreateChildren is called.
         ///  Default implementation fired the event to any listeners, so be sure
-        ///  to call base.OnOutlineDoubleClick(e) if this is overrideen.
+        ///  to call base.OnOutlineDoubleClick(e) if this is overridden.
         /// </summary>
         protected virtual void OnRecreateChildren(GridEntryRecreateChildrenEventArgs e)
         {
@@ -2580,7 +2580,7 @@ namespace System.Windows.Forms.PropertyGridInternal
         /// <summary>
         ///  Called when the value portion of this GridEntry is clicked.
         ///  Default implementation fired the event to any listeners, so be sure
-        ///  to call base.OnValueClick(e) if this is overrideen.
+        ///  to call base.OnValueClick(e) if this is overridden.
         /// </summary>
         protected virtual void OnValueClick(EventArgs e)
         {
@@ -2590,7 +2590,7 @@ namespace System.Windows.Forms.PropertyGridInternal
         /// <summary>
         ///  Called when the value portion of this GridEntry is clicked.
         ///  Default implementation fired the event to any listeners, so be sure
-        ///  to call base.OnValueDoubleClick(e) if this is overrideen.
+        ///  to call base.OnValueDoubleClick(e) if this is overridden.
         /// </summary>
         protected virtual void OnValueDoubleClick(EventArgs e)
         {
