@@ -48,48 +48,48 @@ namespace System
                     : current.PostAlloc(pActual);
             }
 
-            public unsafe void* PreFree(void* pRequest, BOOL fSpyed)
+            public unsafe void* PreFree(void* pRequest, BOOL fSpied)
             {
                 Ole32.IMallocSpy current = CurrentSpy;
                 return current is null
                     ? pRequest
-                    : current.PreFree(pRequest, fSpyed);
+                    : current.PreFree(pRequest, fSpied);
             }
 
-            public void PostFree(BOOL fSpyed) => CurrentSpy?.PostFree(fSpyed);
+            public void PostFree(BOOL fSpied) => CurrentSpy?.PostFree(fSpied);
 
-            public unsafe nuint PreRealloc(void* pRequest, nuint cbRequest, void** ppNewRequest, BOOL fSpyed)
-                => CurrentSpy?.PreRealloc(pRequest, cbRequest, ppNewRequest, fSpyed) ?? cbRequest;
+            public unsafe nuint PreRealloc(void* pRequest, nuint cbRequest, void** ppNewRequest, BOOL fSpied)
+                => CurrentSpy?.PreRealloc(pRequest, cbRequest, ppNewRequest, fSpied) ?? cbRequest;
 
-            public unsafe void* PostRealloc(void* pActual, BOOL fSpyed)
+            public unsafe void* PostRealloc(void* pActual, BOOL fSpied)
             {
                 Ole32.IMallocSpy current = CurrentSpy;
                 return current is null
                     ? pActual
-                    : current.PostRealloc(pActual, fSpyed);
+                    : current.PostRealloc(pActual, fSpied);
             }
 
-            public unsafe void* PreGetSize(void* pRequest, BOOL fSpyed)
+            public unsafe void* PreGetSize(void* pRequest, BOOL fSpied)
             {
                 Ole32.IMallocSpy current = CurrentSpy;
                 return current is null
                     ? pRequest
-                    : current.PreGetSize(pRequest, fSpyed);
+                    : current.PreGetSize(pRequest, fSpied);
             }
 
-            public nuint PostGetSize(nuint cbActual, BOOL fSpyed)
-                => CurrentSpy?.PostGetSize(cbActual, fSpyed) ?? cbActual;
+            public nuint PostGetSize(nuint cbActual, BOOL fSpied)
+                => CurrentSpy?.PostGetSize(cbActual, fSpied) ?? cbActual;
 
-            public unsafe void* PreDidAlloc(void* pRequest, BOOL fSpyed)
+            public unsafe void* PreDidAlloc(void* pRequest, BOOL fSpied)
             {
                 Ole32.IMallocSpy current = CurrentSpy;
                 return current is null
                     ? pRequest
-                    : current.PreDidAlloc(pRequest, fSpyed);
+                    : current.PreDidAlloc(pRequest, fSpied);
             }
 
-            public unsafe int PostDidAlloc(void* pRequest, BOOL fSpyed, int fActual)
-                => CurrentSpy?.PostDidAlloc(pRequest, fSpyed, fActual) ?? fActual;
+            public unsafe int PostDidAlloc(void* pRequest, BOOL fSpied, int fActual)
+                => CurrentSpy?.PostDidAlloc(pRequest, fSpied, fActual) ?? fActual;
 
             public void PreHeapMinimize() => CurrentSpy?.PreHeapMinimize();
 

@@ -25,43 +25,43 @@ internal partial class Interop
             [PreserveSig]
             void* PreFree(
                 void* pRequest,
-                BOOL fSpyed);
+                BOOL fSpied);
 
             [PreserveSig]
             void PostFree(
-                BOOL fSpyed);
+                BOOL fSpied);
 
             [PreserveSig]
             nuint PreRealloc(
                 void* pRequest,
                 nuint cbRequest,
                 void** ppNewRequest,
-                BOOL fSpyed);
+                BOOL fSpied);
 
             [PreserveSig]
             void* PostRealloc(
                 void* pActual,
-                BOOL fSpyed);
+                BOOL fSpied);
 
             [PreserveSig]
             void* PreGetSize(
                 void* pRequest,
-                BOOL fSpyed);
+                BOOL fSpied);
 
             [PreserveSig]
             nuint PostGetSize(
                 nuint cbActual,
-                BOOL fSpyed);
+                BOOL fSpied);
 
             [PreserveSig]
             void* PreDidAlloc(
                 void* pRequest,
-                BOOL fSpyed);
+                BOOL fSpied);
 
             [PreserveSig]
             int PostDidAlloc(
                 void* pRequest,
-                BOOL fSpyed,
+                BOOL fSpied,
                 int fActual);
 
             [PreserveSig]
