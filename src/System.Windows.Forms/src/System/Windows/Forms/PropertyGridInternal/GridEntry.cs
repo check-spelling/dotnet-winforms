@@ -2647,7 +2647,7 @@ namespace System.Windows.Forms.PropertyGridInternal
         }
 
         /// <summary>
-        ///  Checks if this value should be persisited.
+        ///  Checks if this value should be persisted.
         /// </summary>
         internal virtual bool ShouldSerializePropertyValue()
         {
