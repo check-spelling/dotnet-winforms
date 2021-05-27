@@ -1968,7 +1968,7 @@ namespace System.Windows.Forms
                     string toolText = Text;
                     if (WindowsFormsUtils.ContainsMnemonic(toolText))
                     {
-                        // this shouldnt be called a lot so we can take the perf hit here.
+                        // this shouldn't be called a lot so we can take the perf hit here.
                         toolText = string.Join("", toolText.Split('&'));
                     }
 
