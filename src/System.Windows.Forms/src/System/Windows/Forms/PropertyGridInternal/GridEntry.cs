@@ -1211,7 +1211,7 @@ namespace System.Windows.Forms.PropertyGridInternal
         }
 
         /// <summary>
-        ///  Add an event handler to be invoked when the outline icone portion of
+        ///  Add an event handler to be invoked when the outline icon portion of
         ///  the prop entry is clicked
         /// </summary>
         public virtual void AddOnOutlineClick(EventHandler h)
@@ -1220,7 +1220,7 @@ namespace System.Windows.Forms.PropertyGridInternal
         }
 
         /// <summary>
-        ///  Add an event handler to be invoked when the outline icone portion of
+        ///  Add an event handler to be invoked when the outline icon portion of
         ///  the prop entry is double clicked
         /// </summary>
         public virtual void AddOnOutlineDoubleClick(EventHandler h)
