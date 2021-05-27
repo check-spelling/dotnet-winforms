@@ -169,7 +169,7 @@ namespace System.Windows.Forms.ComponentModel.Com2Interop
                 Attribute attr = null;
 
                 // okay, if we got here, we need to build the attribute...
-                // get the initalizer value if we've got a one item ctor
+                // get the initializer value if we've got a one item ctor
 
                 if (!Convert.IsDBNull(varParams[i]) && varParams[i] is not null)
                 {
@@ -189,7 +189,7 @@ namespace System.Windows.Forms.ComponentModel.Com2Interop
                             catch
                             {
                                 // nevermind
-                                Debug.Fail("Attribute " + t.FullName + " did not have a initalizer specified and has no default constructor");
+                                Debug.Fail("Attribute " + t.FullName + " did not have a initializer specified and has no default constructor");
                                 continue;
                             }
                         }
@@ -206,7 +206,7 @@ namespace System.Windows.Forms.ComponentModel.Com2Interop
                     catch
                     {
                         // nevermind
-                        Debug.Fail("Attribute " + t.FullName + " did not have a initalizer specified and has no default constructor");
+                        Debug.Fail("Attribute " + t.FullName + " did not have a initializer specified and has no default constructor");
                         continue;
                     }
                 }
