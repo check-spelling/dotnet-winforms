@@ -3181,7 +3181,7 @@ namespace System.Windows.Forms.PropertyGridInternal
             bool fBoth = fControl && fShift;
             bool fAlt = ke.Alt;
             Keys keyCode = ke.KeyCode;
-            bool fallingThorugh = false;
+            bool fallingThrough = false;
 
             // Microsoft, we have to do this here because if we are
             // hosted in a non-windows forms dialog, we never get a chance to
@@ -3360,7 +3360,7 @@ namespace System.Windows.Forms.PropertyGridInternal
                     case Keys.Insert:
                         if (fShift && !fControl && !fAlt)
                         {
-                            fallingThorugh = true;
+                            fallingThrough = true;
                             goto case Keys.V;
                         }
 
@@ -3378,14 +3378,14 @@ namespace System.Windows.Forms.PropertyGridInternal
                         // cut text in current property
                         if (fShift && !fControl && !fAlt)
                         {
-                            fallingThorugh = true;
+                            fallingThrough = true;
                             goto case Keys.X;
                         }
 
                         break;
                     case Keys.X:
                         // cut text in current property
-                        if (fallingThorugh || (fControl && !fAlt && !fShift))
+                        if (fallingThrough || (fControl && !fAlt && !fShift))
                         {
                             Clipboard.SetDataObject(gridEntry.GetPropertyTextValue());
                             CommitText("");
@@ -3395,7 +3395,7 @@ namespace System.Windows.Forms.PropertyGridInternal
                         break;
                     case Keys.V:
                         // paste the text
-                        if (fallingThorugh || (fControl && !fAlt && !fShift))
+                        if (fallingThrough || (fControl && !fAlt && !fShift))
                         {
                             DoPasteCommand();
                         }
