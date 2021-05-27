@@ -530,7 +530,7 @@ namespace System.Windows.Forms.PropertyGridInternal
                 {
                     flags |= GridEntry.FL_EXPANDABLE;
 
-                    // If we're exapndable, but we don't support editing,
+                    // If we're expandable, but we don't support editing,
                     // make us read only editable so we don't paint grey.
                     //
                     if (!forceReadOnly && (flags & GridEntry.FLAG_TEXT_EDITABLE) == 0 && !isImmutableReadOnly)
