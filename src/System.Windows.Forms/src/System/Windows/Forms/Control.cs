@@ -9109,7 +9109,7 @@ namespace System.Windows.Forms
                 {
                     if (msg.Msg == (int)User32.WM.KEYDOWN || msg.Msg == (int)User32.WM.SYSKEYDOWN)
                     {
-                        // check if IsInputKey has already procssed this message
+                        // check if IsInputKey has already processed this message
                         // or if it is safe to call - we only want it to be called once.
                         if (target.GetExtendedState(ExtendedStates.InputKey) || target.IsInputKey(keyData))
                         {
@@ -9119,7 +9119,7 @@ namespace System.Windows.Forms
                     }
                     else if (msg.Msg == (int)User32.WM.CHAR || msg.Msg == (int)User32.WM.SYSCHAR)
                     {
-                        // check if IsInputChar has already procssed this message
+                        // check if IsInputChar has already processed this message
                         // or if it is safe to call - we only want it to be called once.
                         if (target.GetExtendedState(ExtendedStates.InputChar) || target.IsInputChar((char)msg.WParam))
                         {
