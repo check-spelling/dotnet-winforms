@@ -3792,7 +3792,7 @@ namespace System.Windows.Forms
         }
 
         /// <summary>
-        ///  The comboboxes window procedure.  Inheritng classes can override this
+        ///  The comboboxes window procedure.  Inheriting classes can override this
         ///  to add extra functionality, but should not forget to call
         ///  base.wndProc(m); to ensure the combo continues to function properly.
         /// </summary>
