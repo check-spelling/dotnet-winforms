@@ -9864,7 +9864,7 @@ namespace System.Windows.Forms
         }
 
         /// <summary>
-        ///  /Releases UI Automation provinder for specified window.
+        ///  /Releases UI Automation provider for specified window.
         /// </summary>
         /// <param name="handle">The window handle.</param>
         internal virtual void ReleaseUiaProvider(IntPtr handle)
