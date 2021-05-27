@@ -8860,7 +8860,7 @@ namespace System.Windows.Forms
         }
 
         /// <summary>
-        ///  Peforms data validation (not paint validation!) on a single control.
+        ///  Performs data validation (not paint validation!) on a single control.
         ///
         ///  Returns whether validation failed:
         ///  False = Validation succeeded, control is valid, accept its new value
