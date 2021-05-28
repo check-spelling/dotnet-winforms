@@ -12140,7 +12140,7 @@ namespace System.Windows.Forms
                 _deviceDpi = (int)User32.GetDpiForWindow(this);
 
                 // Controls are by default font scaled.
-                // Dpi change requires font to be recalculated inorder to get controls scaled with right dpi.
+                // Dpi change requires font to be recalculated in order to get controls scaled with right dpi.
                 if (_oldDeviceDpi != _deviceDpi)
                 {
                     // Checking if font was inherited from parent. Font inherited from parent will receive OnParentFontChanged() events to scale those controls.
