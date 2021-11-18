@@ -19,7 +19,7 @@ internal partial class Interop
             ROMAN = 0x0010,
             CHARCODE = 0x0020,
             HANJACONVERT = 0x0040,
-            HANGEUL = NATIVE,
+            HANGUL = NATIVE,
             SOFTKBD = 0x0080,
             NOCONVERSION = 0x0100,
             EUDC = 0x0200,

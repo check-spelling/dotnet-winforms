@@ -965,7 +965,7 @@ namespace System.Windows.Forms
                         ButtonBaseAdapter.DrawFlatFocus(
                             g,
                             layout.Focus,
-                            colors.Options.HighContrast ? colors.WindowText : colors.ConstrastButtonShadow);
+                            colors.Options.HighContrast ? colors.WindowText : colors.ContrastButtonShadow);
                     }
                 }
                 else

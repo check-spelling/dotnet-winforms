@@ -79,7 +79,7 @@ namespace System.Windows.Forms.ButtonInternal
 
             if (Control.Focused && Control.ShowFocusCues)
             {
-                DrawFlatFocus(e, layout.Focus, colors.Options.HighContrast ? colors.WindowText : colors.ConstrastButtonShadow);
+                DrawFlatFocus(e, layout.Focus, colors.Options.HighContrast ? colors.WindowText : colors.ContrastButtonShadow);
             }
 
             if (!(Control.IsDefault && Control.Focused && (Control.FlatAppearance.BorderSize == 0)))
@@ -167,7 +167,7 @@ namespace System.Windows.Forms.ButtonInternal
 
             if (Control.Focused && Control.ShowFocusCues)
             {
-                DrawFlatFocus(e, layout.Focus, colors.Options.HighContrast ? colors.WindowText : colors.ConstrastButtonShadow);
+                DrawFlatFocus(e, layout.Focus, colors.Options.HighContrast ? colors.WindowText : colors.ContrastButtonShadow);
             }
 
             if (!(Control.IsDefault && Control.Focused && (Control.FlatAppearance.BorderSize == 0)))
@@ -256,7 +256,7 @@ namespace System.Windows.Forms.ButtonInternal
 
                 if (Control.Focused && Control.ShowFocusCues)
                 {
-                    DrawFlatFocus(e, layout.Focus, colors.ConstrastButtonShadow);
+                    DrawFlatFocus(e, layout.Focus, colors.ContrastButtonShadow);
                 }
 
                 if (!(Control.IsDefault && Control.Focused && (Control.FlatAppearance.BorderSize == 0)))

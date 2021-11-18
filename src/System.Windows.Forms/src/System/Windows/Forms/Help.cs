@@ -11,7 +11,7 @@ using System.Globalization;
 using System.IO;
 using System.Runtime.InteropServices;
 using static Interop;
-using static Interop.Hhctl;
+using static Interop.Hhctrl;
 
 namespace System.Windows.Forms
 {

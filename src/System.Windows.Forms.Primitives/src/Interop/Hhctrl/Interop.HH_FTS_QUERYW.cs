@@ -4,7 +4,7 @@
 
 internal partial class Interop
 {
-    internal static partial class Hhctl
+    internal static partial class Hhctrl
     {
         public unsafe struct HH_FTS_QUERYW
         {

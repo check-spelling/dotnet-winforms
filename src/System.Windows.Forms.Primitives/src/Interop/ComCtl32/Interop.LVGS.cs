@@ -18,7 +18,7 @@ internal static partial class Interop
             COLLAPSIBLE = 0x00000008,
             FOCUSED = 0x00000010,
             SELECTED = 0x00000020,
-            SUBSETED = 0x00000040,
+            SUBSETTED = 0x00000040,
             SUBSETLINKFOCUSED = 0x00000080,
         }
     }

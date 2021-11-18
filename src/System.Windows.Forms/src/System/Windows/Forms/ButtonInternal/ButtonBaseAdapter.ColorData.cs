@@ -13,7 +13,7 @@ namespace System.Windows.Forms.ButtonInternal
             public Color ButtonFace { get; set; }
             public Color ButtonShadow { get; set; }
             public Color ButtonShadowDark { get; set; }
-            public Color ConstrastButtonShadow { get; set; }
+            public Color ContrastButtonShadow { get; set; }
             public Color WindowText { get; set; }
             public Color WindowDisabled { get; set; }
             public Color Highlight { get; set; }

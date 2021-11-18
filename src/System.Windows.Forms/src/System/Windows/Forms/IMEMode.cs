@@ -74,12 +74,12 @@ namespace System.Windows.Forms
         Alpha = 8,
 
         /// <summary>
-        ///  Hangeul DBC. This setting is valid for Korean IME only.
+        ///  Hangul DBC. This setting is valid for Korean IME only.
         /// </summary>
         HangulFull = 9,
 
         /// <summary>
-        ///  Hangeul SBC. This setting is valid for Korean IME only.
+        ///  Hangul SBC. This setting is valid for Korean IME only.
         /// </summary>
         Hangul = 10,
 

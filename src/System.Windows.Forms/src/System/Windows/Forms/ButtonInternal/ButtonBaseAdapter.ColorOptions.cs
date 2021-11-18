@@ -95,11 +95,11 @@ namespace System.Windows.Forms.ButtonInternal
 
                 if (colors.ButtonFace.GetBrightness() < .5)
                 {
-                    colors.ConstrastButtonShadow = colors.LowHighlight;
+                    colors.ContrastButtonShadow = colors.LowHighlight;
                 }
                 else
                 {
-                    colors.ConstrastButtonShadow = colors.ButtonShadow;
+                    colors.ContrastButtonShadow = colors.ButtonShadow;
                 }
 
                 if (!Enabled)
@@ -121,7 +121,7 @@ namespace System.Windows.Forms.ButtonInternal
                 colors.ButtonFace = hdc.FindNearestColor(colors.ButtonFace);
                 colors.ButtonShadow = hdc.FindNearestColor(colors.ButtonShadow);
                 colors.ButtonShadowDark = hdc.FindNearestColor(colors.ButtonShadowDark);
-                colors.ConstrastButtonShadow = hdc.FindNearestColor(colors.ConstrastButtonShadow);
+                colors.ContrastButtonShadow = hdc.FindNearestColor(colors.ContrastButtonShadow);
                 colors.WindowText = hdc.FindNearestColor(colors.WindowText);
                 colors.Highlight = hdc.FindNearestColor(colors.Highlight);
                 colors.LowHighlight = hdc.FindNearestColor(colors.LowHighlight);

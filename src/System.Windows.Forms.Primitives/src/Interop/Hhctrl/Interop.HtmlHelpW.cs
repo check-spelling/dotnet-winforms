@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 internal partial class Interop
 {
-    internal static partial class Hhctl
+    internal static partial class Hhctrl
     {
         [DllImport(Libraries.Hhctrl, CharSet = CharSet.Unicode, ExactSpelling = true)]
         public static extern int HtmlHelpW(IntPtr hwndCaller, string pszFile, HH uCommand, IntPtr dwData);
